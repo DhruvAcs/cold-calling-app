@@ -20,7 +20,7 @@ public class UncalledFragment extends Fragment {
         View v = inflater.inflate(R.layout.fragment_uncalled, container, false);
         ListView list = (v.findViewById(R.id.listview_uncalled));
         ArrayList <Student> uncalled = ((GlobalClass)getActivity().getApplication()).getUncalled();
-        ArrayAdapter <Student> arrayAdapter = new ArrayAdapter<Student>(getActivity().getApplicationContext(),R.layout.activity_listview, uncalled);
+        ArrayAdapter <Student> arrayAdapter = new ArrayAdapter<>(getActivity().getApplicationContext(),R.layout.activity_listview, uncalled);
         list.setAdapter(arrayAdapter);
 
 
